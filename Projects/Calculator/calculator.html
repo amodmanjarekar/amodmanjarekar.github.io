@@ -1,0 +1,75 @@
+<html>
+<head>
+<link rel="stylesheet" href="./main/styles.css">
+</head>
+<body>
+  <div id="intro">
+    <center>
+    <h1>Calculator</h1>
+    <p>A simple calculator tool.</p>
+    </center>
+  </div>
+  <div id="main">
+    <div id="calc_base" class="base">
+        <div id="input_field">
+          <div id="displayer"><input type="text" name="display" class="displayer" id="display-text" disabled></div>
+        </div>
+        <div id="numbers">
+          <div class="numrow" id="row1">
+            <button class="input" onclick="numinput(1)">1</button>
+            <button class="input" onclick="numinput(2)">2</button>
+            <button class="input" onclick="numinput(3)">3</button>
+            <button class="operator" onclick="opinput('+')">+</button>
+          </div>
+          <div class="numrow" id="row2">
+            <button class="input" onclick="numinput(4)">4</button>
+            <button class="input" onclick="numinput(5)">5</button>
+            <button class="input" onclick="numinput(6)">6</button>
+            <button class="operator" onclick="opinput('-')">-</button>
+          </div>
+          <div class="numrow" id="row3">
+            <button class="input" onclick="numinput(7)">7</button>
+            <button class="input" onclick="numinput(8)">8</button>
+            <button class="input" onclick="numinput(9)">9</button>
+            <button class="operator" onclick="opinput('*')">*</button>
+          </div>
+          <div class="numrow" id="row4">
+            <button class="input" onclick="decimalinput()">.</button>
+            <button class="input" onclick="numinput(0)">0</button>
+            <button class="input" onclick="displayclear()">C</button>
+            <button class="operator" onclick="opinput('/')">/</button>
+          </div>
+        </div>
+        <button type="button" class="go-button" name="go" onclick="calculate()">Calculate</button>
+    </div>
+  </div>
+
+  <!-- testing area-->
+  <div>
+    <p id="demo"></p>
+  </div>
+
+  <!-- JavaScript -->
+  <script type="text/javascript">
+    var display = document.getElementById("display-text");
+
+
+    function numinput(number){
+      display.value+= number;
+    }
+    function decimalinput(){
+      display.value+= ".";
+    }
+    function opinput(op){
+      display.value+= op;
+    }
+    function calculate(){
+      var finalval = eval(display.value);
+      display.value= finalval;
+    }
+    function displayclear(){
+      display.value= " ";
+    }
+  </script>
+</body>
+</html>
