@@ -1,10 +1,61 @@
 <html>
 <head>
   <title>WEBDEV</title>
+  <link rel="stylesheet" href="main\homestyle.css">
 </head>
 <body>
-<h1>Hey there!</h1>
-<h3>Check out some of my projects:</h3>
-<a href="Projects/Calculator/calculator.html">Calculator</a>
+
+<!--  <div id="open-overlay">
+    <div id="sliding doors" class="sd" style="float: left">
+    </div>
+    <div id="sliding doors" class="sd" style="float: right">
+    </div>
+  </div>-->
+
+  <!--Navigation Bar-->
+  <div id="navbar" class="navbar">
+    <button class="navbutton">About</button>
+    <button class="navbutton">Skills</button>
+    <button class="navbutton">My Work</button>
+    <button class="navbutton">Contact</button>
+  </div>
+
+  <div class="content">
+
+  <div class="top-flexbox" id="text">
+    <div>
+      <p><span style="font-size:150px;">Welcome. </span></p>
+      <p>I'm Amod. I'm a web dev in the making.</p>
+    </div>
+  </div>
+
+  <div id="main-contents" style="background-color: #fff;">
+    <table>
+      <tr>
+        <th>Projects:</th>
+        <th>Work:</th>
+      </tr>
+      <tr>
+        <td><a href="Projects/Calculator/calculator.html"><button class="contentbutton">Calculator</button></a></td>
+        <td>dfd</td>
+      </tr>
+    </table>
+  </div>
+
+  </div>
+
+  <!--Javascript-->
+  <script>
+  window.onscroll = function() {shownav()};
+
+  function shownav() {
+    if (document.body.scrollTop > 775 || document.documentElement.scrollTop > 775) {
+      document.getElementById("navbar").style.top = "0";
+    } else {
+      document.getElementById("navbar").style.top = "-50px";
+    }
+  }
+  </script>
+
 </body>
 </html>
