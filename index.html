@@ -1,7 +1,7 @@
 <html>
 <head>
   <title>WEBDEV</title>
-  <link rel="stylesheet" href="/main/homestyle.css">
+  <link rel="stylesheet" href="main/homestyle.css">
 </head>
 <body>
 
@@ -12,15 +12,13 @@
     </div>
   </div>
 
-  <!--Navigation Bar-->
-  <div id="navbar" class="navbar">
-    <button class="navbutton">About</button>
-    <button class="navbutton">Skills</button>
-    <button class="navbutton">My Work</button>
-    <button class="navbutton">Contact</button>
-  </div>
-
-  <div class="content">
+    <!--Navigation Bar-->
+    <div id="navbar" class="navbar">
+      <a href="#about"><button class="navbutton" style="margin-top: 250px;">About</button></a>
+      <a href="#skills"><button class="navbutton">Skills</button></a>
+      <a href="#work"><button class="navbutton">My Work</button></a>
+      <a href="#contact"><button class="navbutton">Contact</button></a>
+    </div>
 
   <div class="top-flexbox" id="text">
     <div>
@@ -29,18 +27,72 @@
     </div>
   </div>
 
-  <div id="main-contents" style="background-color: #fff;">
-    <table>
-      <tr>
-        <th>Projects:</th>
-        <th>Work:</th>
-      </tr>
-      <tr>
-        <td><a href="Projects/Calculator/calculator.html"><button class="contentbutton">Calculator</button></a></td>
-        <td>dfd</td>
-      </tr>
-    </table>
+  <div id="main-contents">
+
+    <!--About-->
+    <div id="about" class="about">
+      <div class="profile-image">
+        <img src="" alt="Profile Image">
+      </div>
+      <div class="profile-text">
+        <h1><u>About Me</u></h1>
+        <p>text.</p>
+      </div>
+    </div>
+
+    <!--Skills-->
+    <div id="skills" class="skills">
+      <h1><u>Skills</u></h1>
+        <p style="margin-left: 40px;">I'm currently self-learning front-end development, and I plan to start freelancing soon.</p>
+      <h2 style="margin-left: 20px;"><u>Languages Known</u></h2>
+        <ul style="margin-left: 40px">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Git</li>
+        </ul>
+      <h2 style="margin-left: 20px;"><u>Used Providers</u></h2>
+        <ul style="margin-left: 40px">
+          <li>Adobe Dreamweaver</li>
+          <li>Atom</li>
+          <li>Notepad++</li>
+          <li>WordPress</li>
+        </ul>
+    </div>
+
+    <!--My Work-->
+    <div id="work" class="work">
+      <h1 style="margin-left: 200px;"><u>My Work</u></h1>
+      <h2 style="margin-left: 220px;">Here's some stuff I've made so far.</h2>
+      <div class="subwork">
+        <h2 align="center" style="padding: 5px;">Projects</h2>
+        <div class="work-list">
+          <div class="tile">
+            <img src="main/calc.jpg" width="180px" alt="calculator">
+            <a href="Projects/Calculator/calculator.html"><button class="tile-overlay">Calculator</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="subwork">
+        <h2 align="center" style="padding: 5px;">Commissions</h2>
+        <div class="work-list">
+          <div class="tile">Nothing Yet :D
+            <!--<img src="" width="180px" alt="">
+            <button class="tile-overlay"></button>-->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Contact-->
+    <div id="contact" class="contact">
+
+    </div>
+
   </div>
+
+  <!--footer-->
+  <div id="footer" class="footer">
 
   </div>
 
@@ -49,10 +101,10 @@
   window.onscroll = function() {shownav()};
 
   function shownav() {
-    if (document.body.scrollTop > 775 || document.documentElement.scrollTop > 775) {
-      document.getElementById("navbar").style.top = "0";
+    if (document.body.scrollTop > 775) {
+      document.getElementById("navbar").style.left = "0";
     } else {
-      document.getElementById("navbar").style.top = "-50px";
+      document.getElementById("navbar").style.left = "-70px";
     }
   }
   </script>
