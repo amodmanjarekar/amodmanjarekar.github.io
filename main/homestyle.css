@@ -9,9 +9,9 @@ body{
   animation: sd_open 4s;
 }
 
-/*.content{
+.content{
   animation: start_delay 4.44s;
-}*/
+}
 
 .navbar{
   height: 100%;
