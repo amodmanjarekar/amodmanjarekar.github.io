@@ -3,14 +3,15 @@ body{
 }
 
 .sd{
-  background-color: #f6774c;
+  background-color: #333;
   width: 0%;
   height: 100%;
   animation: sd_open 4s;
 }
 
 .content{
-  animation: start_delay 5s;
+/*  animation: start_delay 5s;*/
+  background-color: #f6774c;
 }
 
 .navbar{
@@ -41,10 +42,6 @@ body{
   cursor: pointer;
 }
 
-.main-content{
-  background-color: #f6774c;
-}
-
 .top-flexbox{
   display: flex;
   justify-content: center;
@@ -71,7 +68,6 @@ body{
 .profile-image{
   height: 300px;
   width: 300px;
-  background-color: red;
   margin-right: 25px;
 }
 
@@ -128,14 +124,66 @@ body{
 }
 
 .contact{
+  display: flex;
+  color: #fff;
   margin-top: 200px;
   width: 100%;
   height: 75%;
   background-color: #002;
 }
 
-.footer{
+input{
+  margin-top: 20px;
+}
 
+input[type=text]{
+  width: 200px;
+  border-radius: 2px;
+  margin-left: 20px;
+}
+
+input[type=submit]{
+  width: 100px;
+  padding: 10px;
+  cursor: pointer;
+  border: solid 4px #f6774c;
+  transition: all 0.5s;
+}
+
+input[type=submit]:hover{
+  border-radius: 8px;
+  color: #fff;
+  font-weight: bold;
+  background-color: #f6774c;
+}
+
+.social_q{
+  display: flex;
+  justify-content: center;
+}
+
+.icon{
+  position: relative;
+}
+
+.icon:hover .icon_overlay{
+  opacity: 1;
+}
+
+.icon_overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.25s;
+}
+
+.footer{
+  background-color: #444;
+  color: #aaa;
+  padding: 30px;
 }
 
 /*animations*/

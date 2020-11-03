@@ -5,12 +5,14 @@
 </head>
 <body>
 
-  <div id="open-overlay">
+<!--  <div id="open-overlay">
     <div id="sliding doors" class="sd" style="float: left">
     </div>
     <div id="sliding doors" class="sd" style="float: right">
     </div>
-  </div>
+  </div>-->
+
+  <div id="content" class="content">
 
     <!--Navigation Bar-->
     <div id="navbar" class="navbar">
@@ -27,12 +29,10 @@
     </div>
   </div>
 
-  <div id="main-contents">
-
     <!--About-->
     <div id="about" class="about">
       <div class="profile-image">
-        <img src="" alt="Profile Image">
+        <img src="profile_image.jpg" alt="Profile Image">
       </div>
       <div class="profile-text">
         <h1><u>About Me</u></h1>
@@ -85,14 +85,36 @@
     </div>
 
     <!--Contact-->
-    <div id="contact" class="contact">
-
+    <div id="contact" class="contact"><br>
+      <div style="width: 40%; margin-left: 200px; margin-right: auto; border-right: dashed 5px #fff;">
+        <h1><u>Get in Touch!</u></h1>
+        <div id="contact-form" style="margin-left: 50px;">
+          <form id="contact_me">
+          <label for="name">Name:&nbsp;</label><input type="text" id="name" name="contact_name" placeholder="Enter your name"><br>
+          <label for="mailid">E-mail address:&nbsp;</label><input type="text" id="mailid" name="contact_mailid" placeholder="Enter your email"><br><br>
+          <label for="contact_content">Say Something:</label><br>
+          <textarea id="contact_content" name="contact_content" placeholder="..." style="width: 250px; height: 200px;"></textarea><br>
+          <input type="submit" value="Submit!">
+          </form>
+        </div>
+      </div>
+      <div style="width: 40%;">
+        <p style="margin-top: 200px;">Amod Manjarekar<br><br>
+          <span style="color: #f6774c;">@:&nbsp;</span>amodm.1102@gmail.com</span><br><br>
+          Sector - 18, New Panvel, Raigad,<br>
+          Maharashtra, India</p><hr style="width: 80%;">
+        <div class="social_q">
+          <div class="icon"><a href="https://github.com/amodmanjarekar/"><img src="github_icon.png" alt="gitico" width="50px"><div class="icon_overlay"><img src="github_icon_hover.png" alt="gitico" width="50px"></div></a></div>
+          <!--<div class="icon"><a href=""><img src="" alt="" width="50px"><div class="icon_overlay"><img src="" alt="" width="50px"></div></a></div>-->
+        </div>
+      </div>
     </div>
-
-  </div>
+    <br>
 
   <!--footer-->
   <div id="footer" class="footer">
+    <center><em>Designed and Built by: Amod Manjarekar</em></center>
+  </div>
 
   </div>
 
