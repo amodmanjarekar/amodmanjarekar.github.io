@@ -1,5 +1,7 @@
 body{
   background-color: #f6774c;
+  font-family: 'Catamaran';
+  font-size: 20px;
 }
 
 .sd{
@@ -10,7 +12,7 @@ body{
 }
 
 .content{
-/*  animation: start_delay 5s;*/
+  animation: start_delay 5s;
   background-color: #f6774c;
 }
 
@@ -33,6 +35,8 @@ body{
   background-color: inherit;
   border: none;
   color: #fff;
+  font-family: 'Lobster';
+  font-size: 18px;
   transition: all 0.25s;
 }
 
@@ -50,7 +54,9 @@ body{
   height: 775px;
   background-color: #002;
   color: #fff;
+  font-family: 'Cormorant Upright';
   font-size: 40px;
+  text-shadow: 0px 2px 16px #f6774c;
   background-image: url(homebg.jpg);
 }
 
@@ -60,14 +66,17 @@ body{
   margin-top: 200px;
   margin-left: auto;
   margin-right: auto;
-  background-color: inherit;
-  height: 300px;
-  width: 100%;
+  background-color: #f45925;
+  height: 310px;
+  width: 60%;
+  border-left: double 100px #fff;
+  border-right: double 100px #fff;
 }
 
 .profile-image{
   height: 300px;
   width: 300px;
+  margin-top: 10px;
   margin-right: 25px;
 }
 
@@ -82,17 +91,21 @@ body{
   margin-left: auto;
   margin-right: auto;
   width: 60%;
-  background-color: inherit;
+  border-top: solid 20px #f45925;
+  border-left: solid 20px #da3f0b;
+  border-bottom: solid 20px #912a08;
+  border-right: solid 20px #aa3109;
+  background-color: #fab59e;
 }
 
 .work{
   margin-top: 200px;
-  background-color: inherit;
+  background-color: #f9a386;
 }
 
 .subwork{
   width:100%;
-  height: 250px;
+  height: 260px;
   background-color: #ccc;
 }
 
@@ -107,6 +120,7 @@ body{
 
 .tile:hover .tile-overlay{
   opacity: 1;
+  box-shadow: 2px 4px 8px black;
 }
 
 .tile-overlay{
@@ -116,6 +130,7 @@ body{
   width:100%;
   height: 100%;
   opacity: 0;
+  font-family: 'Lobster';
   font-size: 30px;
   color: #fff;
   cursor: pointer;
