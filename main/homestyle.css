@@ -5,7 +5,7 @@ body{
   font-size: 20px;
 }
 
-/*.sd{
+.sd{
   background-color: #333;
   width: 0%;
   height: 100%;
@@ -14,7 +14,7 @@ body{
 
 .content{
   animation: start_delay 5s;
-}*/
+}
 
 .navbar{
   height: 100%;
