@@ -1,7 +1,7 @@
 <html>
 <head>
   <title>WEBDEV</title>
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="main/homestyle.css">
   <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Catamaran' rel='stylesheet'>
@@ -27,9 +27,16 @@
       <a href="#contact"><button class="navbutton">Contact</button></a>
     </div>
 
+    <div id="topnavbar" class="topnavbar">
+      <a href="#about"><button class="navbutton">About</button></a>
+      <a href="#skills"><button class="navbutton">Skills</button></a>
+      <a href="#work"><button class="navbutton">My Work</button></a>
+      <a href="#contact"><button class="navbutton">Contact</button></a>
+    </div>
+
   <div class="top-flexbox" id="text">
     <div>
-      <p><span style="font-size:120px; font-family: 'Cinzel Decorative';">Welcome.</span></p>
+      <p><span class="welcome">Welcome.</span></p>
       <p>I'm Amod. I'm a web dev in the making.</p>
     </div>
   </div>
@@ -93,6 +100,33 @@
       </div>
     </div>
 
+    <div id="work" class="swork">
+      <h1><u>My Work</u></h1>
+      <h2>Here's some stuff I've made so far.</h2>
+      <div class="ssubwork">
+        <h2 align="center">Projects</h2>
+        <div class="swork-list">
+          <div class="stile">
+            <img src="main/calc.jpg" width="60px" alt="calculator">
+            <a href="Projects/Calculator/calculator.html"><button class="stile-overlay">Calculator</button></a>
+          </div>
+          <div class="stile">
+            <img src="main/clock.jpg" width="60px" alt="clock">
+            <a href="Projects/Clock/clock.html"><button class="stile-overlay">Clock</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="ssubwork">
+        <h2 align="center" style="padding: 5px;">Commissions</h2>
+        <div class="swork-list">
+          <div class="stile">Nothing Yet :D
+            <!--<img src="" width="180px" alt="">
+            <button class="tile-overlay"></button>-->
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!--Contact-->
     <div id="contact" class="contact"><br>
       <div style="width: 40%; margin-left: 200px; margin-right: auto; border-right: dashed 5px #fff;">
@@ -118,6 +152,18 @@
         </div>
       </div>
     </div>
+
+    <div class="scontact">
+      <p style="margin-top: 175px; padding: 10px;">Amod Manjarekar<br><br>
+        <span style="color: #f6774c;">@:&nbsp;</span>amodm.1102@gmail.com</span><br><br>
+        Sector - 18, New Panvel, Raigad,<br>
+        Maharashtra, India</p><hr style="width: 80%;">
+      <div class="social_q">
+        <div class="icon"><a href="https://github.com/amodmanjarekar/"><img src="github_icon.png" alt="gitico" width="50px"><div class="icon_overlay"><img src="github_icon_hover.png" alt="gitico" width="50px"></div></a></div>
+        <!--<div class="icon"><a href=""><img src="" alt="" width="50px"><div class="icon_overlay"><img src="" alt="" width="50px"></div></a></div>-->
+      </div>
+    </div>
+
     <br>
 
   <!--footer-->
@@ -134,8 +180,10 @@
   function shownav() {
     if (document.body.scrollTop > 775) {
       document.getElementById("navbar").style.left = "0";
+      document.getElementById("topnavbar").style.top = "0";
     } else {
       document.getElementById("navbar").style.left = "-70px";
+      document.getElementById("topnavbar").style.top = "-80px";
     }
   }
   </script>
