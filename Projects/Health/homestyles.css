@@ -1,0 +1,95 @@
+body{
+	background-image: url("bg/bgseam.jpg");
+	font-family: 'Catamaran';
+}
+
+a:link {
+  text-decoration: none;
+	color: #fff;
+}
+
+a:visited {
+  text-decoration: none;
+	color: #9f9;
+}
+
+a:hover {
+  text-decoration: underline;
+	color: #6b6;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+.header{
+	background-color: #2c4973;
+	margin-top: 0;
+	padding: 10px;
+	border-left: double 50px #dde;
+	border-right: double 50px #dde;
+}
+
+.title{
+	font-family: 'Paytone One';
+	font-size: 50px;
+	text-shadow: 4px 4px 6px #000;
+	color: #fff;
+}
+
+.frontquote{
+	color: #fff;
+	text-shadow: 2px 2px 2px #000;
+}
+
+.slideshow{
+	clear: both;
+	border-top: solid 250px transparent;
+}
+
+.ssimg{
+	display: none;
+}
+
+.wrapper{
+	position: relative;
+	color: #fff;
+}
+
+.content1{
+	position: relative;
+	float: left;
+}
+
+.content2{
+	position: relative;
+	float: right;
+	top: 200px;
+}
+
+.divbgf{
+	transform: rotate(180deg);
+}
+
+.ptext{
+	position: absolute;
+	top: 50%;
+	left: 10px;
+	transform: translate(0, -50%);
+}
+
+.mtext{
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	transform: translate(0, -50%);
+}
+
+.footer{
+	top: 25px;
+	border-top: solid 20px #fff;
+	height: 150px;
+	background-color: #333;
+	color: white;
+	position: relative;
+}

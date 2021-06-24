@@ -1,0 +1,95 @@
+<html>
+
+<head>
+	<title>MY HEALTH</title>
+	<link rel="stylesheet" href="homestyles.css">
+	<link href='https://fonts.googleapis.com/css?family=Catamaran' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Paytone%20One' rel='stylesheet'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+	<div class="header">
+	<center>
+		<h1 class="title">My Health</h1>
+		<p class="frontquote"><em>"...worrying does not take away tommorrow's troubles, it takes away today's peace..."</em></p>
+	</center>
+	</div>
+
+	<div class="wrapper">
+
+		<div class="content1">
+			<img src="bg/divbg.png" class="divbg" width="100%" style="opacity: 0.9">
+			<div class="ptext">
+				<h2>Physical Health</h2>
+				<ul>
+					<li><a href="ph/ph_imp.html">Importance</a></li>
+					<li><a href="ph/ph_exercises.html">Excercises</a></li>
+					<li><a href="ph/ph_nad.html">Nutrition and Diet</a></li>
+					<li><a href="ph/ph_sc.html">Skin Care</a></li>
+					<li><a href="ph/ph_msc.html">Medical Self-Care and Checkup</a></li>
+					<li><a href="ph/ph_sar.html">Rest and Sleep</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="content2">
+			<img src="bg/divbg.png" class="divbgf" width="100%" align="right"  style="opacity: 0.95">
+			<div class="mtext">
+				<h2>Mental Health</h2>
+				<ul>
+					<li><a href="mh/mh_imp.html">Importance</a></li>
+					<li><a href="mh/mh_selfdisc.html">Me Time and Self Discovery</a></li>
+					<li><a href="mh/mh_sociallife.html">Social Life</a></li>
+					<li><a href="mh/mh_cmhd.html">Common Mental Health Disorders</a></li>
+					<li><a href="mh/mh_hag.html">Happiness and Gratitude</a></li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="slideshow">
+		<h1 class="title" style="font-size: 30px; margin-left: 45%;">~ Quotes ~</h1>
+		<div class="ssimg"><img width="100%" src="images/quotes/q1.png"></div>
+		<div class="ssimg"><img width="100%" src="images/quotes/q2.png"></div>
+		<div class="ssimg"><img width="100%" src="images/quotes/q3.png"></div>
+		<div class="ssimg"><img width="100%" src="images/quotes/q4.png"></div>
+		<div class="ssimg"><img width="100%" src="images/quotes/q5.png"></div>
+		<div class="ssimg"><img width="100%" src="images/quotes/q6.png"></div>
+		<div class="ssimg"><img width="100%" src="images/quotes/q7.png"></div>
+	</div>
+
+	<div class="footer">
+		<p style="position: absolute; bottom: 30px; width: 100%; text-align: center;"><a href="https://www.github.com/amodmanjarekar" class="fa fa-github" style="font-size:50px;"></a></p>
+		<p style="position: absolute; bottom: 0; width: 100%; text-align: center;">Made by Amod Manjarekar</p>
+	</div>
+
+<script>
+
+	var slides = document.getElementsByClassName("ssimg");
+	var totalSlides = slides.length;
+	var cslide = 0;
+
+	function slideMover(){
+		if(cslide == 0){
+			slides[cslide].style.display = "block";
+			slides[totalSlides - 1].style.display = "none";
+			cslide++
+		}else if(cslide == (totalSlides - 1)){
+			slides[cslide].style.display = "block";
+			slides[cslide - 1].style.display = "none";
+			cslide = 0;
+		}else{
+			slides[cslide].style.display = "block";
+			slides[cslide - 1].style.display = "none";
+			cslide++;
+		}
+		setTimeout(slideMover, 5000);
+	}
+	slideMover();
+</script>
+
+</body>
+</html>
