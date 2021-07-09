@@ -1,0 +1,124 @@
+<html lang="en">
+<head>
+  <title>Welcome to AABHAAS</title>
+  <link rel="stylesheet" href="resources/styles.css">
+</head>
+<body>
+
+  <!--header-->
+  <div class="header">
+    <div class="logo">
+      <div style="width: 50px; height: 50px; margin-top: 15px; margin-right: 20px"><img  id="logo" src="resources/img/logo.png" width="50px"></div>
+      <h1 class="title" id="title">AABHAAS</h1>
+    </div>
+    <div class="navbar" id="navbar">
+      <ul class="navlist">
+        <li><a href="#">Home</a></li>
+        <li><a href="resources/productrange.html">Our Products</a></li>
+        <li>About</li>
+      </ul>
+    </div>
+  </div>
+
+  <img src="resources/img/homebanner.jpg" width="100%">
+
+  <div id="products">
+    <div class="scroller" style="overflow: hidden; background-color: #fff;">
+      <div class="scrTA">
+        <span class="scrtext1">
+          THE ARMORY &nbsp; <span style="color: #ff5a5a;">THE ARMORY &nbsp;</span><span style="color: #1ff4ff">THE ARMORY &nbsp;</span>
+        </span>
+        <span class="scrtext2">
+          THE ARMORY &nbsp; <span style="color: #ff5a5a;">THE ARMORY &nbsp;</span><span style="color: #1ff4ff">THE ARMORY &nbsp;</span>
+        </span>
+      </div>
+    </div>
+    <div id="spinfac" style="display: flex;">
+      <div style="width: 50%; height: 600px;; overflow: hidden;">
+        <img src="resources/img/spinfachome.png" style="margin-top: -200px; margin-left: -150px;">
+      </div>
+      <div class="shinfobg">
+        <h2 class="spinfactitle">SPIN FACTION</h2>
+        <hr width="20%">
+        <p class="shinfo">Reality, in your hands.</p>
+        <center><button class="productlink" type="button" onclick="location.href='resources/spinfac.html'">Learn More</button></center>
+      </div>
+    </div>
+    <div id="wizard" style="display: flex;">
+      <div class="shinfobg">
+        <h2 class="wizardtitle">[Wizard]</h2>
+        <hr width="20%">
+        <p class="shinfo">Escape.</p>
+        <center><button class="productlink" type="button" onclick="location.href='resources/wizard.html'">Learn More</button></center>
+      </div>
+      <div style="width: 50%; height: 600px; overflow: hidden;">
+        <img src="resources/img/wizardhome.jpg" style="margin-top: -125px; margin-left: -125px;">
+      </div>
+    </div>
+    <div id="ma5c" style="display: flex;">
+      <div style="width: 50%; height: 600px; overflow: hidden;">
+        <img src="resources/img/ma5c1.png" style="margin-top: -50px; margin-left: -375px; height: 120%;">
+      </div>
+      <div class="shinfobg">
+        <h2 class="ma5ctitle">MA5C AR</h2>
+        <hr width="20%">
+        <p class="shinfo">Zeroth person shooters.</p>
+        <center><button class="productlink" type="button" onclick="location.href='resources/ma5c.html'">Learn More</button></center>
+      </div>
+    </div>
+    <div id="browsemore">
+      <a href="productrange.html"><img src="resources/img/productRange.jpg" width="100%"></a>
+    </div>
+  </div>
+
+  <!--footer-->
+  <div class="footer">
+    <div style="width: 30%; border-top: dashed 5px #000; border-right: dashed 5px #000; position: relative;">
+      <p style="font-family: 'Cairo'; font-size: 15px; left:50%; transform: translateX(-50%); position: absolute; bottom: 0;">&#169; Vaastav Corporation Ltd.&#8482;</p>
+    </div>
+    <div style="width: 70%; border-top: dashed 5px #000; display: flex;">
+      <div class="more">
+        <center>
+        More:<br>
+        <ul style="list-style-type: none;">
+          <li>About Us</li>
+          <li>Contact</li>
+        </ul>
+        </center>
+      </div>
+      <div class="more">
+        <center>
+        Social:
+        <ul class="soclist">
+          <li><a href="#" class="fa fa-facebook"></a></li>
+          <li><a href="#" class="fa fa-twitter"></a></li>
+          <li><a href="#" class="fa fa-instagram"></a></li>
+          <li><a href="#" class="fa fa-linkedin"></a></li>
+        </ul>
+        </center>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  window.onscroll = function() {shownav()};
+
+  function shownav() {
+    if (document.body.scrollTop > 90) {
+      document.getElementById("navbar").style.display = "block";
+      document.getElementById("navbar").style.opacity = "1";
+      document.getElementById("title").style.display = "none";
+      document.getElementById("logo").style.width = "50px";
+      document.getElementById("logo").style.marginLeft = "100px";
+    } else {
+      document.getElementById("navbar").style.display = "none";
+      document.getElementById("navbar").style.opacity = "0";
+      document.getElementById("title").style.display = "block";
+      document.getElementById("logo").style.width = "50px";
+      document.getElementById("logo").style.marginLeft = "0px";
+    }
+  }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+<html>
+<head>
+  <title>MA5C - AABHAAS</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!--header-->
+
+  <div class="scroller" style="overflow: hidden; background-color: #fff;">
+    <div class="scrTA" style="font-size:100px; ">
+      <span class="scrtext1">
+        CONTROLLER &nbsp; <span style="color: #ff5a5a;">CONTROLLER &nbsp;</span><span style="color: #1ff4ff">CONTROLLER &nbsp;</span>
+      </span>
+      <span class="scrtext2">
+        CONTROLLER &nbsp; <span style="color: #ff5a5a;">CONTROLLER &nbsp;</span><span style="color: #1ff4ff">CONTROLLER &nbsp;</span>
+      </span>
+    </div>
+  </div>
+
+  <img src="img/ma5c1.jpg" width="100%">
+
+  <div class="scroller" style="overflow: hidden; background-color: #fff;">
+    <div class="scrTA">
+      <span class="scrtext1">
+        SHOOT ON THE MOVE &nbsp; <span style="color: #ff5a5a;">SHOOT ON THE MOVE &nbsp;</span><span style="color: #1ff4ff">SHOOT ON THE MOVE &nbsp;</span>
+      </span>
+      <span class="scrtext2">
+        SHOOT ON THE MOVE &nbsp; <span style="color: #ff5a5a;">SHOOT ON THE MOVE &nbsp;</span><span style="color: #1ff4ff">SHOOT ON THE MOVE &nbsp;</span>
+      </span>
+    </div>
+  </div>
+
+  <img src="img/quik3.gif" class="spinimg" style="border-color: #eee;">
+  <img src="img/quik2.jpg" class="normimg" width="100%">
+
+  <div class="scroller" style="overflow: hidden; background-color: #fff;">
+    <div class="scrTA">
+      <span class="scrtext1">
+        INSIDE THE BOX &nbsp; <span style="color: #ff5a5a;">INSIDE THE BOX &nbsp;</span><span style="color: #1ff4ff">INSIDE THE BOX &nbsp;</span>
+      </span>
+      <span class="scrtext2">
+        INSIDE THE BOX &nbsp; <span style="color: #ff5a5a;">INSIDE THE BOX &nbsp;</span><span style="color: #1ff4ff">INSIDE THE BOX &nbsp;</span>
+      </span>
+    </div>
+  </div>
+
+  <img src="img/quik4.png" class="normimg">
+
+  <div class="scroller" style="overflow: hidden; background-color: #fff;">
+    <div class="scrTA">
+      <span class="scrtext1">
+        BUY NOW &nbsp; <span style="color: #ff5a5a;">BUY NOW &nbsp;</span><span style="color: #1ff4ff">BUY NOW &nbsp;</span>
+      </span>
+      <span class="scrtext2">
+        BUY NOW &nbsp; <span style="color: #ff5a5a;">BUY NOW &nbsp;</span><span style="color: #1ff4ff">BUY NOW &nbsp;</span>
+      </span>
+    </div>
+  </div>
+
+  <div class="buyproduct">
+    <div style="width:400%;">
+      <img src="img/quik5.png" width="100%">
+    </div>
+    <div class="proinfo">
+      <center>
+      <ul class="variants">
+        <li id="var1" onclick="activateVar1()">Basic</li>
+        <li id="var2" onclick="activateVar2()">Set of Two</li>
+      </ul>
+      <span id="price">Select a variant</span><br>
+      <button class="disabledbuybutton" id="buybutton">Buy Now</button>
+      </center>
+    </div>
+  </div>
+
+  <script>
+
+    var button1 = document.getElementById("var1");
+    var button2 = document.getElementById("var2");
+    var price = document.getElementById("price");
+
+    function activateVar1(){
+      button1.style.backgroundColor = "#eee";
+      button1.style.color = "#000";
+      button2.style.backgroundColor = "#000";
+      button2.style.color = "#fff";
+
+      price.innerHTML = "$59.99";
+
+      document.getElementById("buybutton").className = "activebuybutton";
+    }
+
+    function activateVar2(){
+      button2.style.backgroundColor = "#eee";
+      button2.style.color = "#000";
+      button1.style.backgroundColor = "#000";
+      button1.style.color = "#fff";
+
+      price.innerHTML = "$99.99";
+    }
+
+  </script>
+
+</body>
+</html>

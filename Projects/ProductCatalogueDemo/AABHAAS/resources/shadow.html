@@ -1,0 +1,123 @@
+<html>
+<head>
+  <title>Shadow - AABHAAS</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!--header-->
+
+  <div class="scroller" style="overflow: hidden; background-color: #fff;">
+    <div class="scrTA" style="font-size:100px; ">
+      <span class="scrtext1">
+        HAPTIC SUIT &nbsp; <span style="color: #ff5a5a;">HAPTIC SUIT &nbsp;</span><span style="color: #1ff4ff">HAPTIC SUIT &nbsp;</span>
+      </span>
+      <span class="scrtext2">
+        HAPTIC SUIT &nbsp; <span style="color: #ff5a5a;">HAPTIC SUIT &nbsp;</span><span style="color: #1ff4ff">HAPTIC SUIT &nbsp;</span>
+      </span>
+    </div>
+  </div>
+
+  <img src="img/shadow1.jpg" width="100%">
+
+  <div class="scroller" style="overflow: hidden; background-color: #fff;">
+    <div class="scrTA">
+      <span class="scrtext1">
+        HYPERCONTROL &nbsp; <span style="color: #ff5a5a;">HYPERCONTROL &nbsp;</span><span style="color: #1ff4ff">HYPERCONTROL &nbsp;</span>
+      </span>
+      <span class="scrtext2">
+        HYPERCONTROL &nbsp; <span style="color: #ff5a5a;">HYPERCONTROL &nbsp;</span><span style="color: #1ff4ff">HYPERCONTROL &nbsp;</span>
+      </span>
+    </div>
+  </div>
+
+  <img src="img/shadow3.gif" class="spinimg" style="border-color: #eee;">
+  <img src="img/shadow2.jpg" width="100%">
+
+  <div class="scroller" style="overflow: hidden; background-color: #fff;">
+    <div class="scrTA">
+      <span class="scrtext1">
+        INSIDE THE BOX &nbsp; <span style="color: #ff5a5a;">INSIDE THE BOX &nbsp;</span><span style="color: #1ff4ff">INSIDE THE BOX &nbsp;</span>
+      </span>
+      <span class="scrtext2">
+        INSIDE THE BOX &nbsp; <span style="color: #ff5a5a;">INSIDE THE BOX &nbsp;</span><span style="color: #1ff4ff">INSIDE THE BOX &nbsp;</span>
+      </span>
+    </div>
+  </div>
+
+  <img src="img/shadow4.png" class="normimg">
+
+  <div class="scroller" style="overflow: hidden; background-color: #fff;">
+    <div class="scrTA">
+      <span class="scrtext1">
+        BUY NOW &nbsp; <span style="color: #ff5a5a;">BUY NOW &nbsp;</span><span style="color: #1ff4ff">BUY NOW &nbsp;</span>
+      </span>
+      <span class="scrtext2">
+        BUY NOW &nbsp; <span style="color: #ff5a5a;">BUY NOW &nbsp;</span><span style="color: #1ff4ff">BUY NOW &nbsp;</span>
+      </span>
+    </div>
+  </div>
+
+  <div class="buyproduct">
+    <div style="width:400%;">
+      <img src="img/shadow5.png" width="100%">
+    </div>
+    <div class="proinfo">
+      <center>
+      <ul class="variants">
+        <li id="var1" onclick="activateVar1()">Hydro</li>
+        <li id="var2" onclick="activateVar2()">Geo</li>
+        <li id="var3" onclick="activateVar3()">Pyro</li>
+      </ul>
+      <span id="price">Select a variant</span><br>
+      <button class="disabledbuybutton" id="buybutton">Buy Now</button>
+      </center>
+    </div>
+  </div>
+
+  <script>
+
+    var button1 = document.getElementById("var1");
+    var button2 = document.getElementById("var2");
+    var button3 = document.getElementById("var3");
+    var price = document.getElementById("price");
+
+    function activateVar1(){
+      button1.style.backgroundColor = "#eee";
+      button1.style.color = "#000";
+      button2.style.backgroundColor = "#000";
+      button2.style.color = "#fff";
+      button3.style.backgroundColor = "#000";
+      button3.style.color = "#fff";
+
+      price.innerHTML = "$1499.99";
+
+      document.getElementById("buybutton").className = "activebuybutton";
+    }
+
+    function activateVar2(){
+      button2.style.backgroundColor = "#eee";
+      button2.style.color = "#000";
+      button1.style.backgroundColor = "#000";
+      button1.style.color = "#fff";
+      button3.style.backgroundColor = "#000";
+      button3.style.color = "#fff";
+
+      price.innerHTML = "$1499.99";
+    }
+
+    function activateVar3(){
+      button3.style.backgroundColor = "#eee";
+      button3.style.color = "#000";
+      button1.style.backgroundColor = "#000";
+      button1.style.color = "#fff";
+      button2.style.backgroundColor = "#000";
+      button2.style.color = "#fff";
+
+      price.innerHTML = "$1499.99";
+    }
+
+  </script>
+
+</body>
+</html>

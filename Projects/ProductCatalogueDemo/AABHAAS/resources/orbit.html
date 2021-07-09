@@ -1,0 +1,93 @@
+<html>
+<head>
+  <title>Orbit - AABHAAS</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!--header-->
+
+  <div class="scroller" style="overflow: hidden; background-color: #fff;">
+    <div class="scrTA" style="font-size:100px; ">
+      <span class="scrtext1">
+        OMNIDIRECTIONAL TREADMILL &nbsp; <span style="color: #ff5a5a;">OMNIDIRECTIONAL TREADMILL &nbsp;</span><span style="color: #1ff4ff">OMNIDIRECTIONAL TREADMILL &nbsp;</span>
+      </span>
+      <span class="scrtext2">
+        OMNIDIRECTIONAL TREADMILL &nbsp; <span style="color: #ff5a5a;">OMNIDIRECTIONAL TREADMILL &nbsp;</span><span style="color: #1ff4ff">OMNIDIRECTIONAL TREADMILL &nbsp;</span>
+      </span>
+    </div>
+  </div>
+
+  <img src="img/orbit.jpg" width="100%">
+
+  <div class="scroller" style="overflow: hidden; background-color: #fff;">
+    <div class="scrTA">
+      <span class="scrtext1">
+        360 DEGREE MOVEMENT &nbsp; <span style="color: #ff5a5a;">360 DEGREE MOVEMENT &nbsp;</span><span style="color: #1ff4ff">360 DEGREE MOVEMENT &nbsp;</span>
+      </span>
+      <span class="scrtext2">
+        360 DEGREE MOVEMENT &nbsp; <span style="color: #ff5a5a;">360 DEGREE MOVEMENT &nbsp;</span><span style="color: #1ff4ff">360 DEGREE MOVEMENT &nbsp;</span>
+      </span>
+    </div>
+  </div>
+
+  <img src="img/orbit5.gif" class="spinimg" style="border-color: #eee;">
+  <img src="img/orbit3.jpg" width="100%">
+
+  <div class="scroller" style="overflow: hidden; background-color: #fff;">
+    <div class="scrTA">
+      <span class="scrtext1">
+        BUY NOW &nbsp; <span style="color: #ff5a5a;">BUY NOW &nbsp;</span><span style="color: #1ff4ff">BUY NOW &nbsp;</span>
+      </span>
+      <span class="scrtext2">
+        BUY NOW &nbsp; <span style="color: #ff5a5a;">BUY NOW &nbsp;</span><span style="color: #1ff4ff">BUY NOW &nbsp;</span>
+      </span>
+    </div>
+  </div>
+
+  <div class="buyproduct">
+    <div style="width:400%;">
+      <img src="img/orbit4.png" width="100%">
+    </div>
+    <div class="proinfo">
+      <center>
+      <ul class="variants">
+        <li id="var1" onclick="activateVar1()">Fixed</li>
+        <li id="var2" onclick="activateVar2()">Portable</li>
+      </ul>
+      <span id="price">Select a variant</span><br>
+      <button class="disabledbuybutton" id="buybutton">Buy Now</button>
+      </center>
+    </div>
+  </div>
+
+  <script>
+
+    var button1 = document.getElementById("var1");
+    var button2 = document.getElementById("var2");
+    var price = document.getElementById("price");
+
+    function activateVar1(){
+      button1.style.backgroundColor = "#eee";
+      button1.style.color = "#000";
+      button2.style.backgroundColor = "#000";
+      button2.style.color = "#fff";
+
+      price.innerHTML = "$2999.99";
+
+      document.getElementById("buybutton").className = "activebuybutton";
+    }
+
+    function activateVar2(){
+      button2.style.backgroundColor = "#eee";
+      button2.style.color = "#000";
+      button1.style.backgroundColor = "#000";
+      button1.style.color = "#fff";
+
+      price.innerHTML = "$4999.99";
+    }
+
+  </script>
+
+</body>
+</html>

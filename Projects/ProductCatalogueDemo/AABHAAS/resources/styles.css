@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:black|Cairo|Saira+Stencil+One|Orbitron|Major+Mono+Display');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+body{
+  background-image: url("img/bg.png");
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+  color: #000;
+}
+
+.header{
+  background-color: #fff;
+  position: sticky;
+  z-index: 1;
+  top: 0;
+
+  display: flex;
+  flex-direction: row;
+  height: 90px;
+  overflow: hidden;
+
+  border-bottom: solid 1px #000;
+}
+
+.logo{
+  width: 375px;
+  margin: auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+}
+
+.title{
+  font-family: 'Montserrat';
+  font-size: 50px;
+  line-height: 15px;
+
+  transition: all 1s;
+}
+
+.navbar{
+  margin: 0px 100px 0px 100px;
+  display: none;
+  opacity: 0;
+
+  transition: opacity 1s ease-out;
+}
+
+.navlist{
+  display: flex;
+  list-style-type: none;
+
+  font-family: 'Cairo';
+}
+
+.navlist li{
+  font-size: 20px;
+  margin-left: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+  line-height: 60px;
+  cursor: pointer;
+}
+
+.navlist li:hover{
+  background-color: #dde;
+}
+
+.scrTA{
+  font-size: 58px;
+  font-family: 'Saira Stencil One';
+  white-space: nowrap;
+
+  animation: scrollText 8s infinite linear;
+}
+
+.shinfo{
+  font-family: 'Cairo';
+  font-size: 30px;
+  text-align: center;
+}
+
+.shinfobg{
+  height: 600px;
+  width: 50%;
+  background-color: #dddd;
+}
+
+.productlink{
+  font-family: 'Cairo';
+  font-size: 25px;
+  color: #fff;
+  cursor: pointer;
+
+  background-color: #000;
+  border: solid 5px #000;
+
+  transition: all 200ms;
+}
+
+.productlink:hover{
+  background-color: #fff;
+  color: #000;
+}
+
+.spinfactitle{
+  text-align: center;
+  padding: 30% 0% 0% 0%;
+  font-family: 'Orbitron';
+  font-size: 40px;
+}
+
+.wizardtitle{
+  text-align: center;
+  padding: 10% 0% 0% 0%;
+  font-family: 'Major Mono Display';
+  letter-spacing: 20px;
+  font-size: 80px;
+}
+
+.ma5ctitle{
+  text-align: center;
+  padding: 10% 0% 0% 0%;
+  font-family: 'Montserrat';
+  font-size: 80px;
+}
+
+.footer{
+  display: flex;
+  height: 50%;
+  background-color: #fff;
+}
+
+.more{
+  width: 50%;
+  margin-top: 75px;
+  font-family: 'Cairo';
+  font-size: 20px;
+}
+
+.soclist{
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+
+  font-family: 'Cairo';
+}
+
+.soclist li{
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.fa{
+  width: 40px;
+  height: 40px;
+  align: center;
+  line-height: 40px;
+  border-radius: 10%;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  margin: 5px;
+
+  transition: all 200ms;
+}
+
+.fa-facebook{
+  background-color: #3b5998;
+}
+
+.fa-twitter{
+  background-color: #1da1f2;
+}
+
+.fa-instagram{
+  background-image: linear-gradient(to top right, #fcaf45, #c135a4, #405de6);
+}
+
+.fa-linkedin{
+  background-color: #0e76a8;
+}
+
+.fa:hover{
+  box-shadow: 0px 0px 8px #333;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~ product page css ~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+.spinimg{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 50%;
+
+  border: groove 20px #fff;
+}
+
+.normimg{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.buyproduct{
+  display: flex;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.proinfo{
+  font-size: 30px;
+  width: 250%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-family: 'Cairo';
+  background-color: #bbbb;
+}
+
+.variants{
+  list-style-type: none;
+  display: flex;
+}
+.variants li{
+  font-family: 'Cairo';
+  font-size: 20px;
+  color: #fff;
+  background-color: #000;
+  padding: 0px 12px;
+  text-align: center;
+  cursor: pointer;
+  border: solid 1px #444;
+  border-radius: 5px 0px;
+}
+
+.disabledbuybutton{
+  font-size: 20px;
+  font-family: 'Cairo';
+  background-color: #aaa;
+  border: 2px solid #777;
+}
+
+.disabledbuybutton:hover{
+  cursor: not-allowed;
+}
+
+.activebuybutton{
+  font-size: 20px;
+  font-family: 'Cairo';
+  background-color: #ddd;
+  border: 2px solid #000;
+
+}
+
+.activebuybutton:hover{
+  color: #fff;
+  background-color: #0b0;
+  border-color: #070;
+  cursor: pointer;
+}
+
+@keyframes scrollText {
+  from   { transform: translateX(0%); }
+  to { transform: translateX(-100%); }
+}
