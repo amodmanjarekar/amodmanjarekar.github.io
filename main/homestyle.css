@@ -3,6 +3,7 @@ body{
   background-color: #f6774c;
   font-family: 'Catamaran';
   font-size: 20px;
+  margin: 0;
 }
 
 a:link {
