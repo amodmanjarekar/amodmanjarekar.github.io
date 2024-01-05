@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ec0ea038.css",
+    "main.js": "/static/js/main.18f915b1.js",
+    "static/media/scr-monitor.png": "/static/media/scr-monitor.5a0ea8a2cf09ec7d55e0.png",
+    "static/media/scr-laptop.png": "/static/media/scr-laptop.5ea607d3c3c95b432292.png",
+    "static/media/scr-mobile.png": "/static/media/scr-mobile.b34866abbcec75749801.png",
+    "index.html": "/index.html",
+    "main.ec0ea038.css.map": "/static/css/main.ec0ea038.css.map",
+    "main.18f915b1.js.map": "/static/js/main.18f915b1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ec0ea038.css",
+    "static/js/main.18f915b1.js"
+  ]
+}
